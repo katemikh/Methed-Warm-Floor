@@ -1,0 +1,21 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Inter, sans-serif;
+}
+
+.container {
+    min-width: 1190px;
+    margin: 0 auto;
+}
+.list_reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
