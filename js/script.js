@@ -10,11 +10,11 @@ new Swiper('.hero__slider', {
     },
     autoplay: {
         delay: 2000,
-    }
+    },
     breakpoints: {
         320: {
             slidesPerView: 1,
-        }
+        },
         560: {
             spaceBetween: 8,
         }
