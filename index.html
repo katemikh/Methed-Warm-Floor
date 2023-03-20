@@ -5,6 +5,9 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Теплый пол - Приносим тепло в каждый дом</title>
+
+      <link rel="preload" href="fonts/inter-v12-cyrillic_latin-500.woff2" as="font" crossorigin>
+      <link rel="preload" href="fonts/inter-v12-cyrillic_latin-regular.woff2"  as="font" crossorigin>
       <link rel="stylesheet" href="style/normalize.css">
       <link rel="stylesheet" href="style/fonts.css">
       <link rel="stylesheet" href="style/style.css">
@@ -13,12 +16,23 @@
       <link rel="stylesheet" href="style/advantages.css">
       <link rel="stylesheet" href="style/calc.css">
       <link rel="stylesheet" href="style/footer.css">
+
+      <link rel="stylesheet" href="style/swiper-bundle.min.css"/>
+
+      <script src="js/swiper-bundle.min.js" defer></script>
+      <script src="js/script.js" defer></script>
    </head>
    <body>
       <header class="header">
          <h1 class="visually-hidden"> Теплый пол в каждый дом </h1>
          <div class="container header__container">
-            <img class="header__logo" src="image/logo.svg" alt="логотип с солнышком и текстом компании теплый пол">
+            <img 
+            class="header__logo image" 
+            src="image/logo.svg" 
+            alt="логотип с солнышком и текстом компании теплый пол"
+            width="162"
+            height="39"
+            >
             <button class="header__button button"> Заказать </button>
          </div>
       </header>
@@ -30,22 +44,41 @@
                   <p class="hero__description"> Устанавливаем теплые полы в&nbsp;квартирах, офисах и&nbsp;загородных домах.</p>
                   <a href="#calc" class="button link hero__link">Рассчитать&nbsp;стоимость</a>
                </div>
-               <div class="hero__slider-wrapper">
-                  <div class="filling">
-                     <div class="filling">
-                        <div class="filling hero__image" style="background-image: url('./image/here_img_01.jpg');"></div>
-                        <!-- <div class="filling hero__image"></div> -->
-                        <!-- <div class="filling hero__image"></div> -->
+               <div class="hero__slider-block">
+                  <div class="hero__slider swiper">
+                     <div class="hero__slider-wrapper swiper-wrapper">
+                        <div class="swiper-slide"> 
+                           <div class="hero__image" style="background-image: url('./image/here_img_01.jpg');"></div>
+                        </div>
+                        <div class="swiper-slide"> 
+                           <div class="hero__image" style="background-image: url('./image/hero_img_02.jpg');"></div>
+                        </div>
+                        <div class="swiper-slide"> 
+                           <div class="hero__image" style="background-image: url('./image/hero_img_03.jpg');"></div>
+                        </div>
+                        <div class="swiper-slide"> 
+                           <div class="hero__image" style="background-image: url('./image/hero_img_04.jpg');"></div>
+                        </div>
+                        <div class="swiper-slide"> 
+                           <div class="hero__image" style="background-image: url('./image/hero_img_05.jpg');"></div>
+                        </div>
+                        </div>
+                        
+
+                     <div class="hero__arrow"> 
+                        <button class="hero__slider-btn hero__slider-btn_prev"> </button>
+                        <button class="hero__slider-btn hero__slider-btn_next"> </button>
                      </div>
-                     <button class="hero__slider-btn hero__slider-btn_prev"> </button>
-                     <button class="hero__slider-btn hero__slider-btn_next"> </button>
+                    
                   </div>
                </div>
             </div>
          </section>
          <!-- 2 block -->
          <section class="advantage section-offset">
-            <div class="container advantage__container">
+            <div class="container">
+               
+               <div class="advantage__container">    
                <h2 class="title advantages__tytle">Наши преимущества</h2>
                <ul class="advantages__list list-reset">
                   <li class="advantages__item">Надежные материалы</li>
@@ -55,13 +88,14 @@
                   <li class="advantages__item">Гарантия до 10 лет</li>
                </ul>
             </div>
+         </div>
          </section>
          <!-- 3 BLOCK -->
          <section class="calc section-offset" id="calc">
             <div class="container calc__container">
                <div class="calc__content gray-block">
                   <h2 class="title calc__title">Рассчитайте стоимость</h2>
-                  <form class="calc__form">
+                  <form class="calc__form js-calc-form">
                      <fieldset class="calc__fieldset calc__fieldset-size">
                         <label class="calc__wrapper-input calc__wrapper-input-size">
                            <spam class="calc__text">Ширина помещения, м</spam>
@@ -120,20 +154,27 @@
                   <div class="calc__result-wrapper">
                      <p class="calc__result">
                         <spam class="calc__text">Площадь</spam>
-                        <spam class="calc__result-text">35 кв м</spam>
+                        <spam class="calc__result-text js-square">35 кв м</spam>
                      </p>
                      <p class="calc__result">
                         <spam class="calc__text">Примерная стоимость</spam>
-                        <spam class="calc__result-text">42590 руб</spam>
+                        <spam class="calc__result-text js-total-price">42590 руб</spam>
                      </p>
                   </div>
                </div>
             </div>
          </section>
       </main>
+
       <footer class="footer  section-offset">
          <div class="container footer__container">
-            <img class="footer__logo" src="image/logo.svg" alt="логотип солнышко и текст компании теплый пол">
+            <img 
+            class="footer__logo image" 
+            src="image/logo.svg" 
+            alt="логотип солнышко и текст компании теплый пол"
+            width="162"
+            height="39"
+            >
             <ul class="footer__list footer__social list-reset">
                <li class="link footer__item ">
                   <a class="footer__link" href="#">
