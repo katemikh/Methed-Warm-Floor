@@ -52,7 +52,7 @@
 
 .hero__arrow {
 	position: absolute;
-	bottom: --padding;
+	bottom: var(--padding);
 	left: calc(var(--width-slide) - var(--padding));
 	transform: translateX(-100%);
 	display: flex;
