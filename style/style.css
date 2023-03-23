@@ -38,7 +38,15 @@ body {
 .link {
 	text-decoration: none;
 	color: inherit;
+	transition: color 0.2s ease-in-out, background-color .3s ease;
 }
+
+.link:hover {
+	color: #FFD952;
+}
+/* .link:focus {
+
+} */
 
 .image {
 	max-width: 100%;
@@ -56,10 +64,40 @@ body {
     line-height: 19px; */
 	text-transform: uppercase;
 	background-color: #FFC700;
+	border: 1px solid #FFC700;
+	outline: 0;
+}
+
+.button__o {
+    background-color: transparent;
+    border: 1px solid #232020;
 }
 
 .button:hover {
-	opacity: 0.7;
+	background-color: #FFD952;
+	border-color: #FFD952;
+	color: #232020;
+	/* opacity: 0.7; */
+}
+.button:focus-visible {
+	border-color:#9E7B00;
+}
+.button__o:focus-visible {
+	border-color: #FFC700;
+}
+/* .button:active {
+	transform: translate(2px, 2px);
+} */
+.button:active:not(:disabled) {
+	transform: translate(2px, 2px);
+}
+
+.button:disabled {
+	/* pointer-events: none; */
+	background-color: #E0E0E0;
+	border-color:#E0E0E0;
+	color: #898989;
+	cursor: default;
 }
 
 .section-offset {

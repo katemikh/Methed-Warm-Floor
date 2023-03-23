@@ -71,6 +71,14 @@
 	border: 0;
 }
 
+.hero__slider-btn:hover {
+background-color: #FFD952;
+}
+.hero__slider-btn:active {
+	background-color: #FFC700;
+}
+
+
 .hero__slider-btn_prev {
 	transform: rotate(180deg);
 }
