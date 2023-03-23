@@ -1,4 +1,4 @@
-.hero {
+.hero{
 	padding-top: 0;
 	overflow: hidden;
 }
@@ -20,6 +20,7 @@
 	left: calc(var(--width-block) + var(--gap) / 2);
 	width: calc(((var(--width-block) + var(--gap)) * 2) - var(--gap));
 	height: 100%;
+	
 }
 
 .hero__title {
@@ -29,14 +30,14 @@
 
 .hero__description {
 	flex-grow: 1;
-	text-decoration: uppercase;
+	text-transform: uppercase;
 	margin-top: 0;
 	margin-bottom: 32px;
 }
 
 .hero__image {
 	width: var(--width-slide);
-	max-width: 100%;
+	max-width: 100%; 
 	height: 100%;
 	background-position: center;
 	background-size: cover;
@@ -46,7 +47,7 @@
 
 .hero__slider {
 	position: relative;
-	height: 100%;
+    height: 100%;
 }
 
 .hero__arrow {
@@ -67,22 +68,15 @@
 	background: #FFC700 url('../image/arrow_next.svg') no-repeat center/12px;
 	padding: 0;
 	cursor: pointer;
-	border: none;
-
-
+	border: 0;
 }
 
 .hero__slider-btn_prev {
 	transform: rotate(180deg);
-
 }
 
-/* .hero__slider-btn-next {
-    
-} */
-
-
 @media (max-width: 1240px) {
+
 .hero__title {
 	margin-bottom: 24px;
 }
@@ -110,6 +104,12 @@
 		margin-bottom: 50px;
 		max-width: 410px;
 		font-size: 14px;
+	}
+
+	.hero__slider-block {
+		position: static;
+		height: 280px;
+		width: 100%;
 	}
 
 	.hero__arrow {

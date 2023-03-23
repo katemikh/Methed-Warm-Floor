@@ -5,11 +5,11 @@ new Swiper('.hero__slider', {
     spaceBetween: 10,
     loop: true,
     navigation: {
-        prevEl:'.hero__slider-btn_prev',
-        nextEl:'.hero__slider-btn_next',
+        prevEl: '.hero__slider-btn_prev',
+        nextEl: '.hero__slider-btn_next',
     },
     autoplay: {
-        delay: 2000,
+        delay: 3000,
     },
     breakpoints: {
         320: {
@@ -34,7 +34,6 @@ const tariff = {
     premium: 2700,
 };
 
-
 calcForm.addEventListener('submit', (event) => {
     event.preventDefault();
     // console.log(calcForm.width.value);
@@ -48,12 +47,12 @@ calcForm.addEventListener('submit', (event) => {
         const price = square * tariff[calcForm.tariff.value];
 
 
-        calcResultWrapper.getElementsByClassName.display = 'block';
+        calcResultWrapper.style.display = 'block';
 
         totalSquare.textContent = `${square} кв м`;
         totalPrice.textContent = `${price} руб`;
     }
-})
+});
 
 
 

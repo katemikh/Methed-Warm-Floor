@@ -20,6 +20,8 @@ body {
 	font-size: 16px;
 	line-height: 1.5;
 	font-weight: 400;
+	min-height: 100vh;
+	min-width: 320px;
 }
 
 .container {
@@ -44,7 +46,7 @@ body {
 }
 
 .button {
-	display: inline-block;
+	/* display: inline-block; */
 	border: none;
 	cursor: pointer;
 	border-radius: 24px;
@@ -54,6 +56,10 @@ body {
     line-height: 19px; */
 	text-transform: uppercase;
 	background-color: #FFC700;
+}
+
+.button:hover {
+	opacity: 0.7;
 }
 
 .section-offset {
@@ -87,6 +93,12 @@ body {
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
+/* @media (hover: hover) {
+	.button:hover {
+		opacity: 0.3;
+	}
+} */
 
 @media (max-width: 1240px) {
 	:root {

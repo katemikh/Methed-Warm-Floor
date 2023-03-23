@@ -1,4 +1,4 @@
-.advantage__container {
+.advantages__container {
 	display: flex;
 	justify-content: space-between;
 	gap: 10px;
@@ -33,13 +33,13 @@
 
 @media (max-width: 1240px) {
 
-	.advantage__container {
+	.advantages__container {
 		padding: 0 30px;
 	}
 	.advantages__title{
 		max-width: 330px;
 	}
-	.advantage__item {
+	.advantages__item {
 		font-size: 20px;
 	}
 
@@ -47,7 +47,7 @@
 
 @media (max-width: 920px) {
 
-	.advantage__container {
+	.advantages__container {
 		flex-direction: column;
 		gap: 24px;
 	}
@@ -59,7 +59,7 @@
 	.advantages__list {
 		width: 100%;
 	}
-	.advantage__item {
+	.advantages__item {
 		font-size: 16px;
 		margin-bottom: 16px;
 	}
@@ -67,10 +67,10 @@
 }
 
 @media (max-width: 560px) {
-	.advantage__container {
+	.advantages__container {
 		padding: 0 20px;
 	}
-	.advantage__item {
+	.advantages__item {
 		font-size: 14px;
 		padding-left: 24px;
 	}
